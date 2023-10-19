@@ -6,12 +6,10 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private float _speed = 20f;
+    [SerializeField] private float _speed = 10f;
 
     void Start()
     {
-        transform.position = new Vector3(transform.position.x, 1, 2);
-        transform.rotation = Quaternion.Euler(90, 0, 0);
     }
 
     // Update is called once per frame
@@ -19,8 +17,12 @@ public class Laser : MonoBehaviour
     {
         transform.Translate(Vector3.up * _speed * Time.deltaTime);
 
-        if (transform.position.z > 80)
+        if (transform.position.y > 8)
         {
+            if (transform.parent != null)
+            {
+                Destroy(transform.parent.gameObject);
+            }
             Destroy(this.gameObject);
         }
     }
