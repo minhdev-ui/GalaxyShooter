@@ -26,12 +26,4 @@ public class Laser : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.transform.name.Contains("Enemy"))
-        {
-            Destroy(this.gameObject);
-        }
-    }
 }

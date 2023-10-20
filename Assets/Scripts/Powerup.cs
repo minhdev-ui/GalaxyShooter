@@ -40,9 +40,7 @@ public class Triple_Shot_Powerup : MonoBehaviour
                         player.SpeedBoostActive();
                         break;
                     case 2:
-                        Debug.Log("Shield Collected");
-                        break;
-                    default:
+                        player.ShieldActive();
                         break;
                 }
             }
