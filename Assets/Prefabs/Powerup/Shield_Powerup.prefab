@@ -14,7 +14,10 @@ GameObject:
   - component: {fileID: 6253877056805463984}
   - component: {fileID: 9222046742287502316}
   - component: {fileID: -1679285604055465558}
+<<<<<<< HEAD
   - component: {fileID: -8821875611255699790}
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
   m_Layer: 0
   m_Name: Shield_Powerup
   m_TagString: Untagged
@@ -103,7 +106,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 1.5
   powerupID: 2
+<<<<<<< HEAD
   _powerUpClip: {fileID: 8300000, guid: 5ee343246919d2b4bba63ae629e95494, type: 3}
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
 --- !u!54 &6253877056805463984
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -173,6 +179,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<< HEAD
 --- !u!82 &-8821875611255699790
 AudioSource:
   m_ObjectHideFlags: 0
@@ -269,3 +276,5 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7

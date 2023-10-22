@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -705,6 +709,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+<<<<<<< HEAD
 --- !u!1 &1020058890
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +759,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
 --- !u!1 &1215976196
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +919,10 @@ GameObject:
   - component: {fileID: 2133619580}
   - component: {fileID: 2133619579}
   - component: {fileID: 2133619578}
+<<<<<<< HEAD
   - component: {fileID: 2133619581}
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -994,6 +1004,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
 --- !u!114 &2133619581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,6 +1065,8 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1063,4 +1076,7 @@ SceneRoots:
   - {fileID: 600838472}
   - {fileID: 1215976199}
   - {fileID: 195952667}
+<<<<<<< HEAD
   - {fileID: 1020058892}
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7

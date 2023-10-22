@@ -11,8 +11,11 @@ GameObject:
   - component: {fileID: 3588119188774051437}
   - component: {fileID: 1940767884920092661}
   - component: {fileID: 4141326738532340558}
+<<<<<<< HEAD
   - component: {fileID: -7475897768432994431}
   - component: {fileID: 7940316235443632793}
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
   m_Layer: 0
   m_Name: Explode
   m_TagString: Untagged
@@ -30,7 +33,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.0502366, y: 0.091901705, z: 3.2403517}
+<<<<<<< HEAD
   m_LocalScale: {x: 0.20375535, y: 0.20375535, z: 0.20375535}
+=======
+  m_LocalScale: {x: 0.44621488, y: 0.44621488, z: 0.44621488}
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,8 +101,13 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+<<<<<<< HEAD
   m_SortingLayerID: -791979343
   m_SortingLayer: 2
+=======
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1d67ba02a3ae743ed81501156742929f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -108,6 +120,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+<<<<<<< HEAD
 --- !u!114 &-7475897768432994431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,3 +229,5 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+=======
+>>>>>>> 6a5aad20ad5d5e63e0db0bf94ee709afa1b7e0d7

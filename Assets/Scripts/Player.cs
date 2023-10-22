@@ -18,13 +18,13 @@ public class Player : MonoBehaviour
     [SerializeField] private bool _isTripleShotActive = false;
     [SerializeField] private bool _isSpeedBoostActive = false;
     [SerializeField] private bool _isShieldActive = false;
-    [SerializeField] private float _durationPowerup = 3.0f;
     [SerializeField] private AudioClip _laserShotClip;
     public SpriteRenderer spriteRenderer;
     public Sprite spriteTurnLeft;
     public Sprite spriteTurnRight;
     public Sprite spriteIdle;
     private AudioSource _laserShotAudio;
+    [SerializeField] private float _durationPowerup = 5.0f;
     private bool _isReady;
     private float _canFire = 0.0f;
     private SpawnManager _spawnManager;
@@ -50,6 +50,10 @@ public class Player : MonoBehaviour
         {
             spriteRenderer.sprite = spriteIdle;
         }
+        transform.position = new Vector3(0, -6.6f, 0);
+        _isReady = true;
+        _spawnManager = GameObject.Find("Spawn_Manager").GetComponent<SpawnManager>();
+        _uiManager = GameObject.Find("Canvas").GetComponent<UIManager>();
 
         if (_spawnManager == null)
         {
@@ -80,12 +84,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         Ready();
-        if (!_isReady)
+        if (_isReady)
         {
-            CalculateMovement();
-            Shooting();
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(0, -3, 0), Time.deltaTime * _speed);
+            _isReady = false;
         }
-
+        CalculateMovement();
+        Shooting();
         _shield.SetActive(_isShieldActive);
     }
 
