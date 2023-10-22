@@ -1517,6 +1517,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1136439976}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1521595126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1521595128}
+  - component: {fileID: 1521595127}
+  m_Layer: 0
+  m_Name: Pool_Laser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1521595127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521595126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bccbd46b1632df54bbfd647af7b67df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _laser: {fileID: 5337015456481905077, guid: 901d2b5fc0573544e98e40f8397ad3aa, type: 3}
+  _player: {fileID: 2077674037}
+--- !u!4 &1521595128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521595126}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.922538, y: -0.8251888, z: 0.033418372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1656154637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2209,3 +2255,4 @@ SceneRoots:
   - {fileID: 23741255}
   - {fileID: 1093749797}
   - {fileID: 849183543}
+  - {fileID: 1521595128}
