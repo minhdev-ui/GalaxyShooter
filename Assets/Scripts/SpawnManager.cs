@@ -10,12 +10,15 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private GameObject _enemyContainer;
     [SerializeField] private GameObject[] _powerUp;
     [SerializeField] private GameObject _powerUpContainer;
+    [SerializeField] private GameObject _asteroid;
+    [SerializeField] private GameObject _asteroidContainer;
     private bool _stopSpawning = false;
 
     void Start()
     {
         StartCoroutine(SpawnEnemyRoutine());
         StartCoroutine(SpawnPowerUpRoutine());
+        StartCoroutine(SpawnAsteroidRoutine());
     }
 
     // Update is called once per frame
@@ -35,11 +38,26 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    IEnumerator SpawnAsteroidRoutine()
+    {
+        while (!_stopSpawning)
+        {
+            yield return new WaitForSeconds(3.0f);
+            Vector3 posToSpawn = new Vector3(Random.Range(-8f, 8f), 6f,
+                0f);
+            GameObject newAsteroid = Instantiate(_asteroid, posToSpawn, Quaternion.identity);
+            newAsteroid.transform.parent = _asteroidContainer.transform;
+            yield return new WaitForSeconds(6.0f);
+        }
+    }
+
     IEnumerator SpawnPowerUpRoutine()
     {
         while (!_stopSpawning)
         {
-            int randomPowerup = Random.Range(0, 2);
+            yield return new WaitForSeconds(15.0f);
+            Debug.Log(_powerUp.Length);
+            int randomPowerup = Random.Range(0, 3);
             Vector3 posToSpawn = new Vector3(Random.Range(-8f, 8f), 6f,
                 0f);
             GameObject newPowerUp = Instantiate(_powerUp[randomPowerup], posToSpawn, Quaternion.identity);

@@ -3,16 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Triple_Shot_Powerup : MonoBehaviour
+public class Powerup : MonoBehaviour
 {
     [SerializeField] private float _speed = 1.5f;
 
     // Start is called before the first frame update
     [SerializeField] private int powerupID;
 
-    void Start()
-    {
-    }
+    [SerializeField] private AudioClip _powerUpClip;
 
     // Update is called once per frame
     void Update()
@@ -31,6 +29,7 @@ public class Triple_Shot_Powerup : MonoBehaviour
             Player player = other.transform.GetComponent<Player>();
             if (player != null)
             {
+                AudioSource.PlayClipAtPoint(_powerUpClip, transform.position);
                 switch (powerupID)
                 {
                     case 0:
@@ -40,9 +39,7 @@ public class Triple_Shot_Powerup : MonoBehaviour
                         player.SpeedBoostActive();
                         break;
                     case 2:
-                        Debug.Log("Shield Collected");
-                        break;
-                    default:
+                        player.ShieldActive();
                         break;
                 }
             }

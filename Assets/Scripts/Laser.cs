@@ -6,7 +6,7 @@ using UnityEngine;
 public class Laser : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] private float _speed = 10f;
+    [SerializeField] private float _speed = 20f;
 
     void Start()
     {
@@ -21,17 +21,9 @@ public class Laser : MonoBehaviour
         {
             if (transform.parent != null)
             {
-                Destroy(transform.parent.gameObject);
+                transform.parent.gameObject.SetActive(false);
             }
-            Destroy(this.gameObject);
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.transform.name.Contains("Enemy"))
-        {
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
